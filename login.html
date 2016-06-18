@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/login.css"/>
+</head>
+<body>
+<!--header start-->
+<div class="headerContainer">
+    <div class="header">
+        <div class="right clear">
+            <ul>
+                <li><a href="">乐峰首页</a></li>
+                <li class="code">
+                    <div class="codeCon">
+                        <a href="">快速导航</a>
+                        <span class="up1"></span>
+                    </div>
+                    <div class="help">
+                        <a href="">帮助中心</a>
+                        <a href="">联系客服</a>
+                        <a href="">商务合作</a>
+                        <img src="images/help.jpg" alt=""/>
+                        <span>惊喜码上来</span>
+                    </div>
+                </li>
+                <li><a href="">收藏乐峰</a></li>
+                <li class="phoneCode">
+                    <div class="con"><a href="" class="phone">手机乐峰</a></div>
+                    <div class="phoneCon">
+                        <img src="images/codeCon.jpg" alt=""/>
+                        <span>客户端</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--header end-->
+<!--body start-->
+<div class="bodyContainer">
+    <div class="body">
+        <div class="logo"><img src="images/logo1.png" alt=""/></div>
+        <div class="container">
+            <div class="beauty"><img src="images/login.png" alt=""/></div>
+            <div class="loginBox">
+                <div class="prompt"></div>
+                <div class="top clear">
+                    <span>登录</span>
+                    <a href="">免费注册</a>
+                </div>
+                <div class="account">
+                    <h2>账号</h2>
+                    <input class="accountN" placeholder="请输入手机号" type="text"/>
+                    <span class="aNumber">请输入账号</span>
+                </div>
+                <div class="password clear">
+                    <div class="forget"><h2>密码</h2><a href="">忘记密码？</a></div>
+                    <input class="passwordN" placeholder="请输入6-20位数字、下划线或字母" type="password"/>
+                    <span class="pNumber">请输入密码</span>
+                </div>
+                <a href="" class="login">登 录</a>
+                <div class="line"></div>
+                <p>合作网站账号登录</p>
+                <div class="bottom clear">
+                    <a href="javascript:;"><img src="images/weixin.png" alt=""/><span>微信</span></a>
+                    <a href="javascript:;"><img src="images/qq.png" alt=""/><span>QQ</span> </a>
+                    <a href="javascript:;"><img src="images/weibo.png" alt=""/><span>新浪微博</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--body end-->
+<!--bottom start-->
+<div class="bottomContainer">
+<div class="bottomLast">
+    <div class="lastList">
+        <div class="info">
+            <a href="">关于乐蜂</a>
+            <a href="">免责声明</a>
+            <a href="">隐私声明</a>
+            <a href="">版权声明</a>
+            <a href="">招聘信息</a>
+            <a href="">联系我们</a>
+            <a href="">帮助中心</a>
+            <a href="">友情链接</a>
+        </div>
+        <div class="declare">
+            <span class="declare1">Copyright <b>©</b> 2008-2016 Lefeng.com All Rights Reserved.</span>
+            <span class="declare2">乐蜂（上海）信息技术有限公司</span>
+            <a target="_blank" href="">津ICP备15005555号-1</a>
+            <span class="declare4">京公网安备11010502014183</span>
+            <a target="_blank" href="">营业执照</a>
+        </div>
+    </div>
+</div>
+<div class="bottomPicture">
+    <img src="images/bPicture7.png" alt=""/>
+    <img src="images/bPicture8.png" alt=""/>
+    <img src="images/bPicture9.png" alt=""/>
+    <img src="images/bPicture10.png" alt=""/>
+    <img src="images/bPicture11.png" alt=""/>
+</div>
+</div>
+<!--bottom end-->
+</body>
+<script src="js/utils.js"></script>
+<script src="js/tween.js"></script>
+<script type="text/javascript">
+/*body start*/
+var aInput=document.getElementsByClassName("accountN")[0];
+var pInput=document.getElementsByClassName("passwordN")[0];
+var aNumber=document.getElementsByClassName("aNumber")[0];
+var pNumber=document.getElementsByClassName("pNumber")[0];
+var prompt=document.getElementsByClassName("prompt")[0];
+aInput.onfocus=function() {
+    aNumber.style.display = "block";
+    pNumber.style.display="none";
+}
+pInput.onfocus=function(){
+    pNumber.style.display="block";
+    aNumber.style.display = "none";
+}
+aInput.onblur=function(){
+    var val = this.value;
+    var reg =/^(13[0-9]|15[0-9]|18[0-9]|17[0-9])([0-9]{8})$/;
+    if(reg.test(val)){
+
+    }else{
+        prompt.innerHTML="您输入的手机号不正确";
+        showInfo();
+    }
+};
+pInput.onblur=function(){
+    var val = this.value;
+    var reg =/^\w{6,20}$/;
+    if(reg.test(val)){
+
+    }else{
+        prompt.innerHTML="您输入的密码格式不正确";
+        showInfo();
+    }
+
+};
+function showInfo(){
+       prompt.style.display="block";
+       window.clearTimeout(timer);
+        var timer =setTimeout(function() {
+            prompt.style.display="none";
+        },1500);
+}
+
+/*body end*/
+</script>
+</html>

@@ -1,0 +1,393 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+/*header start*/
+.headerContainer {
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+}
+
+.headerContainer .header {
+    width: 1000px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+.header .right {
+    float: right;
+}
+
+.header .right ul li {
+    margin-right: 15px;
+    float: left;
+    width: 70px;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.header .right ul li a {
+    color: #666666;
+    font-size: 12px;
+    font-family: "宋体";
+}
+
+.header .right ul li .phone {
+    color: #f52648;
+}
+
+.header .right ul li .up1 {
+    background: url("../images/sprite.png") no-repeat;
+    background-position: -96px 0;
+    width: 8px;
+    height: 4px;
+    position: absolute;
+    top: 15px
+}
+
+.header .right  .code .help {
+    width: 140px;
+    min-height: 10px;
+    border: 1px solid #dcdcdc;
+    display: none;
+    position: relative;
+    margin-top: -2px;
+    z-index: 1;
+}
+
+.header .right ul li .help a {
+    display: inline-block;
+    float: left;
+    width: 66px;
+    height: 28px;
+    overflow: hidden;
+    color: #333;
+    text-indent: 12px;
+}
+.header .right ul li .help a:hover{
+    color: #f52648;
+}
+.header .right ul li .help img{
+    height: 112px;
+    width: 112px;
+    margin: 0 auto;
+    display: block;
+}
+.header .right ul li .help span{
+    font-size: 12px;
+    color: #f52648;
+}
+.header .right ul .code .codeCon{
+    width:70px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+}
+.header .right ul .code:hover .codeCon{
+    width: 68px ;
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    background: #fff;
+    border-bottom: 1px solid #FFF;
+}
+
+.header .right ul .code:hover .help{
+    display: block;
+    background: #fff;
+}
+
+.header .right ul li .phoneCon{
+    width: 137px;
+    min-height: 10px;
+    border: 1px solid #dcdcdc;
+    margin-top: -3px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.header .right ul li .phoneCon img{
+    height: 112px;
+    width: 112px;
+    display: block;
+    margin: 10px auto;
+}
+.header .right ul li .phoneCon span{
+    font-size: 12px;
+}
+.header .right ul .phoneCode{
+    width: 68px;
+    margin-right: 0;
+}
+.header .right ul .phoneCode .con{
+    z-index: 3;
+    position: relative;
+}
+.header .right ul .phoneCode:hover .con{
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #fff ;
+    background: #fff;
+}
+.header .right ul .phoneCode:hover .phoneCon{
+    display: block;
+    background: #fff;
+}
+/*header end*/
+
+/*body start*/
+.bodyContainer{
+    width: 100%;
+    height: 100%;
+    background: #fbe1d4;
+}
+.bodyContainer .body{
+    width: 1000px;
+    min-height: 800px;
+    margin: 0 auto;
+}
+.bodyContainer .body .logo{
+    padding-top: 10px;
+}
+.bodyContainer .body .container{
+    width: 1000px;
+    min-height: 100px;
+    margin-top: 20px;
+}
+.bodyContainer .body .container .loginBox{
+    width: 420px;
+    height: 535px;
+    background: #fff;
+    float: right;
+    border-radius: 8px;
+    border: 1px solid #E2E2E2;
+    position: relative;
+}
+.bodyContainer .body .container .loginBox .prompt{
+    position: absolute;
+    line-height: 40px;
+    font-size: 18px;
+    width: 70%;
+    left: 50%;
+    margin-left: -35%;
+    text-align: center;
+    color: #FFF;
+    top: 13%;
+    z-index: 20;
+    background: #000;
+    opacity: 0.6;
+    border-radius: 0.25rem;
+    display: none;
+
+}
+.bodyContainer .body .container .beauty{
+    float: left;
+    display: block;
+    margin-top: 35px;
+}
+.bodyContainer .body .container .top{
+    margin: 20px auto 0;
+    width: 300px;
+    height: 45px;
+    line-height: 45px;
+
+}
+.bodyContainer .body .container .top span{
+    font-family: "Microsoft YaHei",微软雅黑;
+    color: #333;
+    font-size: 24px;
+}
+
+.bodyContainer .body .container .top a{
+    display: block;
+    float: right;
+    color: #02b1cb;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: "Microsoft YaHei",微软雅黑;
+}
+.bodyContainer .body .container .top a:hover{
+    text-decoration: underline;
+}
+.bodyContainer .body .container .account{
+    width: 300px;
+    height: 80px;
+    margin: 50px auto 0;
+}
+.bodyContainer .body .container .account h2{
+    font-size: 12px ;
+    line-height: 24px;
+    font-weight: 500;
+    color:#6E6E6E;
+}
+.bodyContainer .body .container .account input{
+    width: 290px;
+    height: 35px;
+    border: 1px solid #c6c6c6;
+    padding-left: 10px;
+}
+.bodyContainer .body .container .account .aNumber{
+    font-family: arial, 宋体, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu;
+    font-size: 12px;
+    color: #999999;
+    display: none;
+    margin-top: 5px;
+}
+.bodyContainer .body .container .password{
+    width: 300px;
+    height:80px;
+    margin: 12px auto 0;
+}
+.bodyContainer .body .container .password .forget{
+    width: 300px;
+    line-height: 24px;
+}
+.bodyContainer .body .container .password .forget h2{
+    font-size: 12px ;
+    line-height: 24px;
+    font-weight: 500;
+    color:#6E6E6E;
+    display: block;
+    float: left;
+}
+.bodyContainer .body .container .password .forget a{
+    display: block;
+    float: right;
+    font-size: 12px;
+    color: #02b1cb;
+}
+.bodyContainer .body .container .password input{
+    width: 290px;
+    height: 35px;
+    border: 1px solid #c6c6c6;
+    padding-left: 10px;
+}
+.bodyContainer .body .container .password .pNumber{
+    font-family: arial, 宋体, MicrosoftJhengHei, 华文细黑, STHeiti, MingLiu;
+    font-size: 12px;
+    color: #999999;
+    display: none;
+    margin-top: 5px;
+}
+.bodyContainer .body .container .loginBox .login{
+    width: 300px;
+    height: 40px;
+    background: #e21a34;
+    margin: 30px auto 0;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei', 微软雅黑, 黑体;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.bodyContainer .body .container .loginBox .line{
+    border-bottom: 1px solid #E2E2E2;
+    width: 300px;
+    margin: 25px auto 0;
+}
+.bodyContainer .body .container .loginBox p{
+    width: 103px;
+    height: 15px ;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 60px;
+    color:#6E6E6E ;
+}
+.bodyContainer .body .container .loginBox .bottom{
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+}
+.bodyContainer .body .container .loginBox .bottom a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    float: left;
+}
+.bodyContainer .body .container .loginBox .bottom a>span{
+    color: #999;
+    display: block;
+    float: left;
+    line-height: 40px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.bodyContainer .body .container .loginBox .bottom a>img{
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+
+/*body end*/
+/*bottom start*/
+.bottomContainer{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+
+}
+.bottomContainer .bottomLast{
+    width: 1000px;
+    min-height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bottomContainer .lastList{
+    margin-top: 35px;
+}
+.bottomContainer .lastList .info a{
+    color: #666;
+    margin-right: 15px;
+    font-size: 12px;
+}
+.bottomContainer .lastList .declare span{
+    color: #666;
+    font-weight: 400;
+    font-size: 13px;
+}
+.bottomContainer .lastList .declare span b{
+    color: #666;
+    font-weight: 400;
+    font-size: 13px;
+}
+.bottomContainer .lastList .declare a{
+    color: #666;
+    font-weight: 400;
+    font-size: 13px;
+}
+.bottomContainer .lastList .declare{
+    width: 1000px;
+    height: 15px;
+    margin-top: 10px;
+}
+.bottomContainer .bottomPicture{
+    width: 1000px;
+    min-height: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bottomContainer .bottomPicture img{
+    display: block;
+    float: left;
+    margin-right: 36px;
+    margin-bottom: 30px;
+}
+/*bottom end*/
